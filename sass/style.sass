@@ -1,0 +1,76 @@
+@import "extra/mixins"
+@import "extra/drag"
+
+$bg: white
+$text-color: black
+
+body, html
+  background: $bg
+  color: $text-color
+
+
+#grid
+  // Aspect
+  background: transparent
+  display: table
+  padding: 10px
+
+  // positioning
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+  // subclass
+  .box
+    //mixins
+    +tr(.3s)
+    +box-shadow(2)
+
+    // aspect
+    // background: white
+
+    margin: 10px
+    width: 200px
+    height: 200px
+
+    // positioning
+    position: relative
+    display: inline-block
+
+    // states
+    &:hover
+      cursor: pointer !important
+      +box-shadow(4)
+    &:active
+      +box-shadow(1)
+
+.box.git
+  background: url('res/git.svg') center no-repeat
+  background-size: 50%
+.box.social.facebook
+  background: url('res/facebook.svg') center no-repeat
+  background-size: 50%
+.box.social.twitter
+  background: url('res/twitter.svg') center no-repeat
+  background-size: 50%
+
+.box.stack
+  background: url('res/stack.svg') center no-repeat
+  background-size: 50%
+.box.npm
+  background: url('res/npm-logo.svg') center no-repeat
+  background-size: 50%
+.box.codepen
+  background: url('res/code_pen.svg') center no-repeat
+  background-size: 50%
+
+.box.youtube
+  background: url('res/youtube.svg') center no-repeat
+  background-size: 50%
+.box.google
+  background: url('res/google.svg') center no-repeat
+  background-size: 50%
+.box.social.gplus
+  background: url('res/gplus.svg') center no-repeat
+  background-size: 50%

@@ -1,0 +1,80 @@
+// output: ../src/index.html
+doctype html
+html(lang="en")
+  head
+    // Meta Tags
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="theme-color" content="#fff")
+
+    title Chrome Home
+
+    // Favicon URL
+    link(rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/picol-vector/32/server_edit-16.png")
+
+    // jQuery
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+    script(src="https://cdn.rawgit.com/jquery/jquery-color/master/jquery.color.js" charset="utf-8")
+
+    // Tiny Color
+    script(src="https://cdn.rawgit.com/bgrins/TinyColor/master/tinycolor.js" charset="utf-8")
+
+    // ClipboardJS
+    script(script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.10/dist/clipboard.min.js")
+
+    // Bootstrap Javascript
+    script(script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+
+    // Underscore JS / Multiple math functions
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8")
+
+    //  Detect JS  
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js" charset="utf-8")
+
+    //  Personal JS 
+    script(src="js/sortable.js")
+    script(src="js/index.js")
+
+    // Bootstrap CSS
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+
+    // Font Awsome
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+
+    // Chili CSS
+    link(rel="stylesheet" href="https://rawgit.com/Rawnly/Chili.css/master/dist/chili.css")
+
+    // Personal Stylesheet
+    link(rel="stylesheet" href="css/style.css")
+  body
+    // Your code below
+    
+    
+    div#grid
+      div  
+        a(href="https://facebook.com")
+            .box.social.facebook
+                
+        a(href="https://twitter.com")
+            .box.social.twitter
+                
+        a(href="https://plus.google.com")
+            .box.social.gplus
+            
+      div  
+        a(href="https://stackoverflow.com")
+            .box.stack        
+        a(href="https://google.com")  
+            .box.google        
+        a(href="https://github.com")
+            .box.git
+      
+      
+      div  
+        a(href="https://youtube.com")
+            .box.youtube        
+        a(href="https://codepen.io")
+            .box.codepen        
+        a(href="https://npmjs.com")
+            .box.npm
